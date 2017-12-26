@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-form-field>
+    <input matInput [formControl]="answer1" [(ngModel)]="answer" placeholder="Who has the best dev tutorials?" required>
+    <mat-error *ngIf="answer1.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+
+  <br>
+  <button mat-raised-button (click)="showAnswer()">Answer me</button>
+  <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+</mat-card>
+
+<mat-card *ngIf="answerDisplay;" >
+  <h2>{{ answerDisplay }}</h2>
+</mat-card>
