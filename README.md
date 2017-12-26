@@ -10,7 +10,7 @@ Material Documentation:
 
 https://material.angular.io/components/toolbar/overview
 
-For each materil form item you need to import specific library 
+For each material form item you need to import specific library 
 
 ## Development server
 
